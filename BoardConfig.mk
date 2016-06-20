@@ -26,5 +26,9 @@ TARGET_OTA_ASSERT_DEVICE := g4,p1,h815
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_h815_defconfig
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9-kernel/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+
 # inherit from the proprietary version
 -include vendor/lge/h815/BoardConfigVendor.mk
